@@ -49,6 +49,20 @@ def equiGrade():
         print(f"Input Grade: {gUser}\nGrade/Mark: 5.0\nDescription: Failure")
     else:
         pass
+
 gradeTable()
 gUser = gradeInput()
+
+#Step 4: Consider the [1],[2], and [3] options during the user input
+def otherOutputs():
+    if gUser == 1:
+        print("Grade/Mark: Unavailable\nDescription: Incomplete")
+    elif gUser == 2:
+        print("Grade/Mark: Unavailable\nDescription: Withdrawn")
+    elif gUser == 3:
+        print("Grade/Mark: Unavailable\nDescription: Dropped")
+    else:
+        pass
+
 equiGrade()
+otherOutputs()
