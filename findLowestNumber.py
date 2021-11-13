@@ -19,3 +19,9 @@ def findLowest():
         return b
     else:
         return c
+numLowest = findLowest()
+
+#Step 3: Let the user know the lowest number.
+def userKnow():
+    print(f"\nThe lowest number is {numLowest}.")
+userKnow()
