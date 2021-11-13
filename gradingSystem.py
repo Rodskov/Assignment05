@@ -22,29 +22,31 @@ def gradeTable():
 
 #Step 2: Let the user input their grade.
 def gradeInput():
-    gradeInput = float(input("Input Grade: "))
+    gradeInput = float(input("Input Grade: \nEnter:\n[1] if Incomplete\n[2] if Withdrawn\n[3] if Dropped\n\n"))
     return gradeInput
 
-#Step 3: Set up display conditions for equivalence
+#Step 3: Set up display conditions for marks and equivalence.
 def equiGrade():
     if gUser >= 97 and gUser <= 100:
-        print("Grade/Mark: 1.0")
+        print(f"Input Grade: {gUser}\nGrade/Mark: 1.0\nDescription: Excellent")
     elif gUser >= 94 and gUser <= 96:
-        print("Grade/Mark: 1.25")
+        print(f"Input Grade: {gUser}\nGrade/Mark: 1.25\nDescription: Excellent")
     elif gUser >= 91 and gUser <= 93:
-        print("Grade/Mark: 1.5")
+        print(f"Input Grade: {gUser}\nGrade/Mark: 1.5\nDescription: Very Good")
     elif gUser >= 88 and gUser <= 90:
-        print("Grade/Mark: 1.75")
+        print(f"Input Grade: {gUser}\nGrade/Mark: 1.75\nDescription: Very Good")
     elif gUser >= 85 and gUser <= 87:
-        print("Grade/Mark: 2.0")
+        print(f"Input Grade: {gUser}\nGrade/Mark: 2.0\nDescription: Good")
     elif gUser >= 82 and gUser <= 84:
-        print("Grade/Mark: 2.25")
+        print(f"Input Grade: {gUser}\nGrade/Mark: 2.25\nDescription: Good")
     elif gUser >= 79 and gUser <= 81:
-        print("Grade/Mark: 2.5")
+        print(f"Input Grade: {gUser}\nGrade/Mark: 2.5\nDescription: Satisfactory")
     elif gUser >= 76 and gUser <= 78:
-        print("Grade/Mark: 2.75")
+        print(f"Input Grade: {gUser}\nGrade/Mark: 2.75\nDescription: Satisfactory")
     elif gUser == 75:
-        print("Grade/Mark: 3.0")
+        print(f"Input Grade: {gUser}\nGrade/Mark: 3.0\nDescription: Passing")
+    elif gUser >= 65 and gUser <= 74:
+        print(f"Input Grade: {gUser}\nGrade/Mark: 5.0\nDescription: Failure")
     else:
         pass
 gradeTable()
