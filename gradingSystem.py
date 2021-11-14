@@ -28,30 +28,33 @@ def gradeInput():
 #Step 3: Set up display conditions for marks and equivalence.
 def equiGrade():
     if gUser >= 97 and gUser <= 100:
-        print(f"Input Grade: {gUser}\nGrade/Mark: 1.0\nDescription: Excellent")
+        print(f"Input Grade: {gUserOutput}\nGrade/Mark: 1.0\nDescription: Excellent")
     elif gUser >= 94 and gUser <= 96:
-        print(f"Input Grade: {gUser}\nGrade/Mark: 1.25\nDescription: Excellent")
+        print(f"Input Grade: {gUserOutput}\nGrade/Mark: 1.25\nDescription: Excellent")
     elif gUser >= 91 and gUser <= 93:
-        print(f"Input Grade: {gUser}\nGrade/Mark: 1.5\nDescription: Very Good")
+        print(f"Input Grade: {gUserOutput}\nGrade/Mark: 1.5\nDescription: Very Good")
     elif gUser >= 88 and gUser <= 90:
-        print(f"Input Grade: {gUser}\nGrade/Mark: 1.75\nDescription: Very Good")
+        print(f"Input Grade: {gUserOutput}\nGrade/Mark: 1.75\nDescription: Very Good")
     elif gUser >= 85 and gUser <= 87:
-        print(f"Input Grade: {gUser}\nGrade/Mark: 2.0\nDescription: Good")
+        print(f"Input Grade: {gUserOutput}\nGrade/Mark: 2.0\nDescription: Good")
     elif gUser >= 82 and gUser <= 84:
-        print(f"Input Grade: {gUser}\nGrade/Mark: 2.25\nDescription: Good")
+        print(f"Input Grade: {gUserOutput}\nGrade/Mark: 2.25\nDescription: Good")
     elif gUser >= 79 and gUser <= 81:
-        print(f"Input Grade: {gUser}\nGrade/Mark: 2.5\nDescription: Satisfactory")
+        print(f"Input Grade: {gUserOutput}\nGrade/Mark: 2.5\nDescription: Satisfactory")
     elif gUser >= 76 and gUser <= 78:
-        print(f"Input Grade: {gUser}\nGrade/Mark: 2.75\nDescription: Satisfactory")
+        print(f"Input Grade: {gUserOutput}\nGrade/Mark: 2.75\nDescription: Satisfactory")
     elif gUser == 75:
-        print(f"Input Grade: {gUser}\nGrade/Mark: 3.0\nDescription: Passing")
+        print(f"Input Grade: {gUserOutput}\nGrade/Mark: 3.0\nDescription: Passing")
     elif gUser >= 65 and gUser <= 74:
-        print(f"Input Grade: {gUser}\nGrade/Mark: 5.0\nDescription: Failure")
+        print(f"Input Grade: {gUserOutput}\nGrade/Mark: 5.0\nDescription: Failure")
     else:
         pass
 
 gradeTable()
 gUser = gradeInput()
+gUserOutput = gUser
+gUser = round(gUser)
+
 
 #Step 4: Consider the [1],[2], and [3] options during the user input
 def otherOutputs():
